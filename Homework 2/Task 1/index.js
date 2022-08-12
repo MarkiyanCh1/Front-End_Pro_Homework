@@ -16,13 +16,13 @@ console.log(first_digit, second_digit, third_digit)
 if (first_digit === second_digit && first_digit  === third_digit) {
     console.log("All digits of a number are equal.");
 }
-else if (first_digit === second_digit && first_digit !== third_digit){
+else if (first_digit === second_digit){
     console.log("First and second digits are equal." + " " + first_digit + " " + second_digit);
 }
-else if (first_digit === third_digit && first_digit !== second_digit){
+else if (first_digit === third_digit){
     console.log("First and third digits are equal." + " " + first_digit + " " + third_digit);
 }
-else if (second_digit === third_digit && first_digit !== second_digit){
+else if (second_digit === third_digit){
     console.log("Second and third digits are equal." + " " + second_digit+ " " + third_digit);
 }
 else {
