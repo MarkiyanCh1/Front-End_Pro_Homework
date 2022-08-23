@@ -11,14 +11,13 @@
 // Максимально использовать функции
 
 function User() {
-    this.name = prompt("Your name?", "Enter name here");
-    this.age = prompt("Your age?", "18+");
+    this.age = prompt("What is your age?", "18+");
 }
 
 
 function Car(user) {
     if (user.age >= 18){
-        this.owner = user.name;
+        this.owner = emptyField("Your name:");
         this.brand = emptyField("Brand name:");
         this.year = emptyField("Car year:");
         this.type = emptyField("Type of car:");
@@ -46,10 +45,11 @@ function emptyField(msg){
     do {
         text = prompt(msg);
         if (text === null ){
-            text = false;
+            text = "not available";
         }
     } while (text.length === 0);
     return text;
 }
+
 showData(car);
-console.log(car)
+console.log(car);
