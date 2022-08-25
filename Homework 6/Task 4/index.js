@@ -3,13 +3,12 @@
 // Все это с замыканиями, например: sum(3) = 3 sum(5) = 8 sum(20) = 28
 // На каждом вызове возвращает текущую сумму
 
-function getCounter() {
-    let counter = 0;
-    return function (userVar) {
-        return counter+=userVar;
-    };
+let acc = 0;
+function counter(value) {
+    return acc += value;
 }
-let count = getCounter();
-console.log(`sum(3) = ${count(3)}`);
-console.log(`sum(5) = ${count(5)}`);
-console.log(`sum(20) = ${count(20)}`);
+console.log(`sum(${acc} + 3) = ${counter(3)}`);
+console.log(`sum(${acc} + 5) = ${counter(5)}`);
+console.log(`sum(${acc} + 20) = ${counter(20)}`);
+
+
