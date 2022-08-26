@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9748f00-53d5-454f-adb1-ec3bb062992e" name="Changes" comment="corrected + task 5">
+    <list default="true" id="e9748f00-53d5-454f-adb1-ec3bb062992e" name="Changes" comment="corrected task 2">
+      <change afterPath="$PROJECT_DIR$/Homework 8/Task 1/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 8/Task 4/images/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 8/Task 4/images/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 8/Task 4/images/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 8/Task 4/images/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 8/Task 4/images/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 8/Task 4/images/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 8/Task 4/images/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 8/Task 4/images/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 8/Task 4/images/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 8/Task 4/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework 7/Task 2/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Homework 7/Task 2/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +28,7 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -46,7 +57,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/User/Desktop/GitHub/Front-End_Pro_Homework/Homework 6",
+    "last_opened_file_path": "C:/Users/User/Desktop/GitHub/Front-End_Pro_Homework/Homework 8/Task 4",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -57,11 +69,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\GitHub\Front-End_Pro_Homework\Homework 8\Task 4" />
       <recent name="C:\Users\User\Desktop\GitHub\Front-End_Pro_Homework\Homework 6" />
       <recent name="C:\Users\User\Desktop\GitHub\Front-End_Pro_Homework\Homework 6\Task 5" />
       <recent name="C:\Users\User\Desktop\GitHub\Front-End_Pro_Homework\Homework 6\Task 4" />
       <recent name="C:\Users\User\Desktop\GitHub\Front-End_Pro_Homework\Homework 6\Task 3" />
-      <recent name="C:\Users\User\Desktop\GitHub\Front-End_Pro_Homework\Homework 6\Task 2" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -83,7 +95,8 @@
       <workItem from="1660671919616" duration="822000" />
       <workItem from="1660673026771" duration="11000" />
       <workItem from="1660733567326" duration="7740000" />
-      <workItem from="1660990947213" duration="36207000" />
+      <workItem from="1660990947213" duration="38121000" />
+      <workItem from="1661537319112" duration="605000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1659983195192</created>
@@ -141,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661467331808</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="corrected task 2">
+      <created>1661527574231</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1661527574231</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +184,7 @@
     <MESSAGE value="Corrected 1st task 2nd homework" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="corrected + task 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="corrected + task 5" />
+    <MESSAGE value="corrected task 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="corrected task 2" />
   </component>
 </project>
