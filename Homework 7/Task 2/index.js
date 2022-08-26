@@ -11,7 +11,7 @@
 // Максимально использовать функции
 
 function User() {
-    this.age = prompt("What is your age?", "18+");
+    this.age = +(prompt("What is your age?", "18+"));
 }
 
 
@@ -23,7 +23,10 @@ function Car(user) {
         this.type = emptyField("Type of car:");
         this.power = emptyField("Engine power");
     }
-    else alert("You are not allowed to derive a car");
+    else if (user.age < 18) {
+        alert("You are not allowed to drive a car")
+    }
+    else alert("Error");
 }
 
 
@@ -33,7 +36,7 @@ let car = new Car(user);
 
 function showData(userName){
     for (item in userName){
-        if (userName[item]!==null && userName[item]!==false){
+        if (userName[item]) {
             console.log(item, ":" ,userName[item]);
         }
     }
