@@ -5,10 +5,10 @@
 "use strict";
 
 let userLink;
-const buttonOne = document.querySelector(".enter-link");
-const buttonTwo = document.querySelector(".sent-link");
+const EnterLink = document.querySelector(".enter-link");
+const SentLink = document.querySelector(".sent-link");
 
-buttonOne.addEventListener("click", function () {
+EnterLink.addEventListener("click", function () {
     userLink = prompt("Please enter your Link:");
     if (!validURL(userLink)) {
         alert("Link is Invalid!");
@@ -16,7 +16,7 @@ buttonOne.addEventListener("click", function () {
     }
 });
 
-buttonTwo.addEventListener("click", function () {
+SentLink.addEventListener("click", function () {
     document.location.href = userLink;
 });
 
@@ -28,5 +28,5 @@ function validURL(url) {
         '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
         '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
         '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
-    return !!pattern.test(url);
+    return pattern.test(url);
 }

@@ -4,9 +4,9 @@
 
 "use strict";
 
-const buttonOne = document.querySelector(".get-image");
+const Images = document.querySelector(".get-image");
 
-buttonOne.addEventListener("click", function () {
+Images.addEventListener("click", function () {
     const i = Math.floor(Math.random() * 9 + 1);
     document.querySelectorAll("img").forEach((img) => img.remove());
     document
