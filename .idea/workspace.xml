@@ -4,10 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9748f00-53d5-454f-adb1-ec3bb062992e" name="Changes" comment="initial commit">
+    <list default="true" id="e9748f00-53d5-454f-adb1-ec3bb062992e" name="Changes" comment="corrected">
+      <change afterPath="$PROJECT_DIR$/Homework 9/Task 1/images/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 9/Task 1/images/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 9/Task 1/images/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 9/Task 1/images/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 9/Task 1/images/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 9/Task 1/images/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 9/Task 1/images/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 9/Task 1/images/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 9/Task 1/images/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 9/Task 1/images/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 9/Task 1/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 9/Task 1/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 9/Task 1/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework 8/Task 2/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Homework 8/Task 2/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework 8/Task 4/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Homework 8/Task 4/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +100,8 @@
       <workItem from="1660990947213" duration="38121000" />
       <workItem from="1661537319112" duration="2277000" />
       <workItem from="1661541310496" duration="906000" />
-      <workItem from="1661689836790" duration="1367000" />
+      <workItem from="1661689836790" duration="2672000" />
+      <workItem from="1661804485799" duration="11520000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1659983195192</created>
@@ -161,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661538214959</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="corrected">
+      <created>1661691513650</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1661691513650</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +204,7 @@
     <MESSAGE value="corrected + task 5" />
     <MESSAGE value="corrected task 2" />
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="corrected" />
+    <option name="LAST_COMMIT_MESSAGE" value="corrected" />
   </component>
 </project>
