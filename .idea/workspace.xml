@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9748f00-53d5-454f-adb1-ec3bb062992e" name="Changes" comment="corrected">
-      <change afterPath="$PROJECT_DIR$/Homework 9/Task 1/images/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework 9/Task 1/images/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework 9/Task 1/images/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework 9/Task 1/images/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework 9/Task 1/images/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework 9/Task 1/images/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework 9/Task 1/images/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework 9/Task 1/images/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework 9/Task 1/images/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework 9/Task 1/images/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework 9/Task 1/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework 9/Task 1/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework 9/Task 1/styles.css" afterDir="false" />
+    <list default="true" id="e9748f00-53d5-454f-adb1-ec3bb062992e" name="Changes" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/Homework 10/Task 1/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 10/Task 1/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 10/Task 1/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,30 +42,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Desktop/GitHub/Front-End_Pro_Homework/Homework 8/Task 4&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/User/Desktop/GitHub/Front-End_Pro_Homework/Homework 10",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\GitHub\Front-End_Pro_Homework\Homework 10" />
       <recent name="C:\Users\User\Desktop\GitHub\Front-End_Pro_Homework\Homework 8\Task 4" />
       <recent name="C:\Users\User\Desktop\GitHub\Front-End_Pro_Homework\Homework 6" />
       <recent name="C:\Users\User\Desktop\GitHub\Front-End_Pro_Homework\Homework 6\Task 5" />
       <recent name="C:\Users\User\Desktop\GitHub\Front-End_Pro_Homework\Homework 6\Task 4" />
-      <recent name="C:\Users\User\Desktop\GitHub\Front-End_Pro_Homework\Homework 6\Task 3" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -101,7 +94,10 @@
       <workItem from="1661537319112" duration="2277000" />
       <workItem from="1661541310496" duration="906000" />
       <workItem from="1661689836790" duration="2672000" />
-      <workItem from="1661804485799" duration="11520000" />
+      <workItem from="1661804485799" duration="11556000" />
+      <workItem from="1661816220974" duration="363000" />
+      <workItem from="1661872851131" duration="2193000" />
+      <workItem from="1662136757323" duration="5201000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1659983195192</created>
@@ -180,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661691513650</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="initial commit">
+      <created>1661816136415</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1661816136415</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,8 +206,12 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="corrected + task 5" />
     <MESSAGE value="corrected task 2" />
-    <MESSAGE value="initial commit" />
     <MESSAGE value="corrected" />
-    <option name="LAST_COMMIT_MESSAGE" value="corrected" />
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
