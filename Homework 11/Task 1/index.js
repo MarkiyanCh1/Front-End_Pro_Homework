@@ -30,7 +30,8 @@ form.addEventListener("submit", function (event) {
         document.body.appendChild(div);
 
         text = this.elements[0].value;
-        const area = createNode("p", []);
+
+        const area = createNode("p", [{ name: "class", value: "default" }]);
         area.innerText = text;
         div.appendChild(area);
 
@@ -50,18 +51,6 @@ form.addEventListener("submit", function (event) {
 
         const btnRemoveTask = document.getElementById(`btnRemoveTask${i}`);
         btnRemoveTask.addEventListener("click", removeAll);
-
-        //
-
-        checkbox.addEventListener("change", function () {
-            if (this.checked) {
-                area.setAttribute("class", "line-through ");
-                console.log("Checkbox is checked..");
-            } else {
-                area.setAttribute("class", "");
-                console.log("Checkbox is not checked..");
-            }
-        });
 
         checkbox.addEventListener("change", function () {
 
@@ -92,42 +81,56 @@ form.addEventListener("submit", function (event) {
 });
 
 function createNode(tagName, attributes) {
-    const el = document.createElement(tagName);
+    const element = document.createElement(tagName);
     attributes.forEach(({ name, value }) => {
-        el.setAttribute(name, value);
+        element.setAttribute(name, value);
     });
-    return el;
+    return element;
 }
-let select = document.querySelector("#select");
-
+const select = document.getElementById("select");
 select.addEventListener("change", function () {
-    const wrappers = document.querySelectorAll(".wrapper");
     switch (this.value) {
-        case "inProgress":
-            console.log(this.value);
-            wrappers.forEach((element) => {
-                if (element.isDone == false) {
-                    this.closest(".wrapper").setAttribute("class", "none");
-                } else if (element.isDone == true) {
-                    this.closest(".wrapper").setAttribute("class", "wrapper");
-                }
-            });
-            break;
         case "done":
             console.log(this.value);
-            wrappers.forEach((element) => {
-                if (element.isDone == true) {
-                    this.closest(".wrapper").setAttribute("class", "none");
-                } else if (element.isDone == false) {
-                    this.closest(".wrapper").setAttribute("class", "wrapper");
+            for (let i = 0; i < taskArray.length; i++) {
+                if (taskArray[i].isDone == false) {
+                    const element = document.querySelector(`[data-id="${i}"]`);
+
+                    element.setAttribute("class", "none");
                 }
-            });
+            }
+            for (let i = 0; i < taskArray.length; i++) {
+                if (taskArray[i].isDone != false) {
+                    const element = document.querySelector(`[data-id="${i}"]`);
+
+                    element.setAttribute("class", "wrapper");
+                }
+            }
+            break;
+        case "inProgress":
+            console.log(this.value);
+            for (let i = 0; i < taskArray.length; i++) {
+                if (taskArray[i].isDone != false) {
+                    const element = document.querySelector(`[data-id="${i}"]`);
+
+                    element.setAttribute("class", "none");
+                }
+            }
+            for (let i = 0; i < taskArray.length; i++) {
+                if (taskArray[i].isDone == false) {
+                    const element = document.querySelector(`[data-id="${i}"]`);
+
+                    element.setAttribute("class", "wrapper");
+                }
+            }
             break;
         case "all":
             console.log(this.value);
-            wrappers.forEach((element) => {
-                this.closest(".wrapper").setAttribute("class", "wrapper");
-            });
+            for (let i = 0; i < taskArray.length; i++) {
+                const element = document.querySelector(`[data-id="${i}"]`);
+
+                element.setAttribute("class", "wrapper");
+            }
             break;
     }
 });

@@ -9,7 +9,7 @@ body {
 
 h1 {
     background-color: bisque;
-    width: 530px;
+    width: 615px;
     display: flex;
     border-radius: 8px;
     margin-bottom: 8px;
@@ -35,7 +35,7 @@ form {
     align-items: center;
     height: 25px;
     justify-content: space-between;
-    width: 530px;
+    width: 615px;
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 8px;
@@ -72,7 +72,13 @@ form {
     height: 36px;
     width: 90px;
 }
-
+.select_wrapper {
+    width: 530px;
+}
 .none {
-    background-color: red;
+    display: none;
+}
+.style_select {
+    height: 36px;
+    width: 90px;
 }
