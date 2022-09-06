@@ -8,14 +8,9 @@ const form = document.getElementById("form");
 form.addEventListener("submit", function (event) {
     i += 1;
     event.preventDefault();
-    if (this.elements[0].value.length === 0) {
+    if (document.getElementById("task").value.length === 0) {
         alert("You can't add empty field!");
-    } else if (this.elements[0].value.length > 50) {
-        alert("Your task is too long!");
-    } else if (this.elements[0].value.length < 3) {
-        alert("Your task is too short!");
-    }
-    else {
+    } else {
         let div = document.createElement("div");
         div.setAttribute("class", "wrapper");
         document.body.appendChild(div);
@@ -50,11 +45,13 @@ form.addEventListener("submit", function (event) {
             }
         });
 
+        this.elements[0].value = "";
+
         function removeAll() {
             area.remove();
             removeButton.remove();
             checkbox.remove();
             div.remove();
         }
-    }
+     }
 });
