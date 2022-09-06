@@ -1,0 +1,74 @@
+body {
+    background-color: dimgray;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+}
+
+h1 {
+    background-color: bisque;
+    width: 530px;
+    display: flex;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    padding: 15px;
+    justify-content: center;
+}
+
+.line-through {
+    text-decoration: line-through;
+    text-decoration-color: red;
+    color: olive;
+}
+
+p {
+    font-size: 25px;
+    text-align: center;
+    width: 380px;
+}
+
+form {
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    height: 25px;
+    justify-content: space-between;
+    width: 530px;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.checkbox {
+    width: 36px;
+    height: 36px;
+    margin-right: 20px;
+}
+.wrapper {
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    height: 25px;
+    justify-content: flex-end;
+    width: 530px;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.task {
+    height: 30px;
+    width: 414px;
+}
+
+#btnAddTask {
+    height: 36px;
+    width: 90px;
+}
+
+.removeButton {
+    height: 36px;
+    width: 90px;
+}
