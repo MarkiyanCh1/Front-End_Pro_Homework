@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9748f00-53d5-454f-adb1-ec3bb062992e" name="Changes" comment="initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework 10/Task 1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Homework 10/Task 1/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework 10/Task 1/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Homework 10/Task 1/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework 11/Task 1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Homework 11/Task 1/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework 11/Task 1/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Homework 11/Task 1/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="e9748f00-53d5-454f-adb1-ec3bb062992e" name="Changes" comment="corrected" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,7 +92,7 @@
       <workItem from="1661804485799" duration="11556000" />
       <workItem from="1661816220974" duration="363000" />
       <workItem from="1661872851131" duration="2193000" />
-      <workItem from="1662136757323" duration="21120000" />
+      <workItem from="1662136757323" duration="22152000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1659983195192</created>
@@ -219,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662502978371</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="corrected">
+      <created>1662549865871</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1662549865871</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,9 +243,9 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="corrected + task 5" />
     <MESSAGE value="corrected task 2" />
-    <MESSAGE value="corrected" />
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="corrected" />
+    <option name="LAST_COMMIT_MESSAGE" value="corrected" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

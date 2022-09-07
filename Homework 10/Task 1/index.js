@@ -17,15 +17,17 @@ form.addEventListener("submit", function (event) {
     area.innerText = text;
     div.appendChild(area);
 
-    const checkbox = document.createElement("input");
-    checkbox.setAttribute("type", "checkbox");
-    checkbox.setAttribute("name", "checkbox");
-    checkbox.setAttribute("class", "checkbox");
+    const checkbox = createNode("input", [
+        { name: "type", value: "checkbox" },
+        { name: "name", value: "checkbox" },
+        { name: "class", value: "checkbox" },
+    ]);
     div.appendChild(checkbox);
 
-    const removeButton = document.createElement("button");
-    removeButton.setAttribute("id", `btnRemoveTask${i}`);
-    removeButton.setAttribute("class", "removeButton");
+    const removeButton = createNode("button", [
+        { name: "id", value: `btnRemoveTask${i}` },
+        { name: "class", value: "removeButton" },
+    ]);
     removeButton.innerText = "Remove";
     div.appendChild(removeButton);
 
