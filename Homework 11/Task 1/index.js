@@ -53,7 +53,7 @@ form.addEventListener("submit", function (event) {
         const wrapper = this.closest(".wrapper");
         const id = wrapper.getAttribute("data-id");
 
-        const task = taskArray.find((taskItem) => taskItem.id == id);
+        const task = taskArray.find((taskItem) => taskItem.id === id);
         task.isDone = this.checked;
 
         if (task.isDone) {
@@ -88,14 +88,14 @@ select.addEventListener("change", function () {
         case "done":
             console.log(this.value);
             for (let i = 0; i < taskArray.length; i++) {
-                if (taskArray[i].isDone == false) {
+                if (taskArray[i].isDone === false) {
                     const element = document.querySelector(`[data-id="${i}"]`);
 
                     element.setAttribute("class", "none");
                 }
             }
             for (let i = 0; i < taskArray.length; i++) {
-                if (taskArray[i].isDone != false) {
+                if (taskArray[i].isDone !== false) {
                     const element = document.querySelector(`[data-id="${i}"]`);
 
                     element.setAttribute("class", "wrapper");
@@ -105,14 +105,14 @@ select.addEventListener("change", function () {
         case "inProgress":
             console.log(this.value);
             for (let i = 0; i < taskArray.length; i++) {
-                if (taskArray[i].isDone != false) {
+                if (taskArray[i].isDone !== false) {
                     const element = document.querySelector(`[data-id="${i}"]`);
 
                     element.setAttribute("class", "none");
                 }
             }
             for (let i = 0; i < taskArray.length; i++) {
-                if (taskArray[i].isDone == false) {
+                if (taskArray[i].isDone === false) {
                     const element = document.querySelector(`[data-id="${i}"]`);
 
                     element.setAttribute("class", "wrapper");
