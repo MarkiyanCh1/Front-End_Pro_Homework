@@ -53,3 +53,10 @@ form.addEventListener("submit", function (event) {
         div.remove();
     }
 });
+function createNode(tagName, attributes) {
+    const element = document.createElement(tagName);
+    attributes.forEach(({ name, value }) => {
+        element.setAttribute(name, value);
+    });
+    return element;
+}
