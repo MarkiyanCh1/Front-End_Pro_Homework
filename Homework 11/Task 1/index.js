@@ -25,12 +25,11 @@ form.addEventListener("submit", function (event) {
     ]);
     document.body.appendChild(div);
 
-    text = this.elements[0].value;
+    text = this.elements.task.value;
 
     const area = createNode("p", [{ name: "class", value: "default" }]);
     area.innerText = text;
     div.appendChild(area);
-
     const checkbox = createNode("input", [
         { name: "type", value: "checkbox" },
         { name: "name", value: "checkbox" },
@@ -53,7 +52,7 @@ form.addEventListener("submit", function (event) {
         const wrapper = this.closest(".wrapper");
         const id = wrapper.getAttribute("data-id");
 
-        const task = taskArray.find((taskItem) => taskItem.id === id);
+        const task = taskArray.find((taskItem) => taskItem.id == id);
         task.isDone = this.checked;
 
         if (task.isDone) {
@@ -65,7 +64,7 @@ form.addEventListener("submit", function (event) {
         }
     });
 
-    this.elements[0].value = "";
+    this.elements.task.value = "";
 
     function removeAll() {
         area.remove();
@@ -88,34 +87,28 @@ select.addEventListener("change", function () {
         case "done":
             console.log(this.value);
             for (let i = 0; i < taskArray.length; i++) {
-                if (taskArray[i].isDone === false) {
-                    const element = document.querySelector(`[data-id="${i}"]`);
-
-                    element.setAttribute("class", "none");
-                }
-            }
-            for (let i = 0; i < taskArray.length; i++) {
-                if (taskArray[i].isDone !== false) {
+                if (taskArray[i].isDone != false) {
                     const element = document.querySelector(`[data-id="${i}"]`);
 
                     element.setAttribute("class", "wrapper");
+                } else {
+                    const element = document.querySelector(`[data-id="${i}"]`);
+
+                    element.setAttribute("class", "none");
                 }
             }
             break;
         case "inProgress":
             console.log(this.value);
             for (let i = 0; i < taskArray.length; i++) {
-                if (taskArray[i].isDone !== false) {
-                    const element = document.querySelector(`[data-id="${i}"]`);
-
-                    element.setAttribute("class", "none");
-                }
-            }
-            for (let i = 0; i < taskArray.length; i++) {
-                if (taskArray[i].isDone === false) {
+                if (taskArray[i].isDone == false) {
                     const element = document.querySelector(`[data-id="${i}"]`);
 
                     element.setAttribute("class", "wrapper");
+                } else {
+                    const element = document.querySelector(`[data-id="${i}"]`);
+
+                    element.setAttribute("class", "none");
                 }
             }
             break;
@@ -127,5 +120,7 @@ select.addEventListener("change", function () {
                 element.setAttribute("class", "wrapper");
             }
             break;
+        default:
+            console.log("No such value")
     }
 });
