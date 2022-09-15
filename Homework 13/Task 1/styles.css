@@ -1,0 +1,78 @@
+body {
+    background-color: darkkhaki;
+}
+.form_wrapper {
+    border: 2px solid black;
+    border-radius: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 47px;
+}
+.form_title {
+    text-align: center;
+    width: 100%;
+}
+.form_label {
+    display: block;
+    margin: 0 0 10px 0;
+    font-weight: 500;
+}
+.form_item {
+    width: 100%;
+    margin: 0 0 25px 0;
+}
+.flex_width {
+    width: 43%;
+}
+.form_input {
+    width: 91%;
+    height: 35px;
+    padding: 0 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+.form_required {
+    font-size: 17px;
+    font-weight: 600;
+}
+.form_button {
+    width: 100%;
+    min-height: 42px;
+    margin-top: 20px;
+    background-color: rgb(108, 194, 165);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid rgb(108, 194, 165);
+    border-radius: 10px;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+.form_button:hover {
+    background-color:rgb(115, 207, 176);
+}
+._errorText {
+    font-size: 16px;
+    color: maroon;
+    margin: 5px 0;
+}
+._error {
+    border: 1px solid crimson;
+}
+._successText {
+    color: darkslategrey;
+    text-align: center;
+    font-size: 18px;
+}
+
+#cardInput::-webkit-outer-spin-button,
+#cardInput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

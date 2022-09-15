@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9748f00-53d5-454f-adb1-ec3bb062992e" name="Changes" comment="corrected">
+      <change afterPath="$PROJECT_DIR$/Homework 12/Task 1/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 12/Task 1/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 12/Task 1/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 13/Task 1/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 13/Task 1/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 13/Task 1/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework 11/Task 1/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Homework 11/Task 1/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +101,9 @@
       <workItem from="1661816220974" duration="363000" />
       <workItem from="1661872851131" duration="2193000" />
       <workItem from="1662136757323" duration="22592000" />
-      <workItem from="1662561978685" duration="7286000" />
+      <workItem from="1662561978685" duration="7600000" />
+      <workItem from="1662584630227" duration="22254000" />
+      <workItem from="1663269468818" duration="6039000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1659983195192</created>
@@ -245,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662563030009</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="corrected">
+      <created>1662582151213</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1662582151213</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +285,18 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="corrected" />
     <option name="LAST_COMMIT_MESSAGE" value="corrected" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Homework 13/Task 1/index.js</url>
+          <line>19</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

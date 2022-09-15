@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./styles.css">
+<!--    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800" rel="stylesheet" />-->
+</head>
+<body>
+
+<div class="form_wrapper">
+    <form id="form" class="form" name="Form">
+        <h2 class="form_title">Registration form</h2>
+        <div class="form_item flex_width">
+            <label for="name-input" class="form_label">Name*:</label>
+            <input id="name-input" type="text" class="form_input" name="name" placeholder="Enter your name" autocomplete="off">
+        </div>
+        <div class="form_item flex_width">
+            <label for="surname-input" class="form_label">Surname*:</label>
+            <input id="surname-input" type="text" class="form_input" name="surname" placeholder="Enter your surname" autocomplete="off">
+        </div>
+        <div class="form_item">
+            <label for="number-input" class="form_label">Phone number*:</label>
+            <input id="number-input" type="tel" class="form_input" name="number" value="+380" maxlength="13" autocomplete="off">
+        </div>
+        <div class="form_item">
+            <label for="email-input" class="form_label">Email*:</label>
+            <input id="email-input" type="text" class="form_input" name="email" placeholder="example@gmail.com" autocomplete="off">
+        </div>
+        <div class="form_item">
+            <label for="card-input" class="form_label">Credit/Debit card number*:</label>
+            <input id="card-input" type="text" class="form_input" name="card" placeholder="0000 0000 0000 0000" maxlength="16" autocomplete="off">
+        </div>
+        <p class="form_required">* - Indicates required field</p>
+        <button type="submit" class="form_button">Send</button>
+    </form>
+</div>
+
+
+<script src="./index.js"></script>
+</body>
+</html>
