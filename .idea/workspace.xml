@@ -4,13 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9748f00-53d5-454f-adb1-ec3bb062992e" name="Changes" comment="corrected">
+    <list default="true" id="e9748f00-53d5-454f-adb1-ec3bb062992e" name="Changes" comment="initial commit">
       <change afterPath="$PROJECT_DIR$/Homework 12/Task 1/index.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Homework 12/Task 1/index.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Homework 12/Task 1/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework 13/Task 1/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework 13/Task 1/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework 13/Task 1/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 14/Task 1/images/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 14/Task 1/images/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 14/Task 1/images/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 14/Task 1/images/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 14/Task 1/images/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 14/Task 1/images/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 14/Task 1/images/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 14/Task 1/images/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 14/Task 1/images/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 14/Task 1/images/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 14/Task 1/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 14/Task 1/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework 14/Task 1/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +39,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../hillel_homeworks-master/lesson_10/index.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -103,7 +116,7 @@
       <workItem from="1662136757323" duration="22592000" />
       <workItem from="1662561978685" duration="7600000" />
       <workItem from="1662584630227" duration="22254000" />
-      <workItem from="1663269468818" duration="6039000" />
+      <workItem from="1663269468818" duration="11127000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1659983195192</created>
@@ -259,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662582151213</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="initial commit">
+      <created>1663276091679</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1663276091679</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,18 +302,60 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="corrected + task 5" />
     <MESSAGE value="corrected task 2" />
-    <MESSAGE value="initial commit" />
     <MESSAGE value="corrected" />
-    <option name="LAST_COMMIT_MESSAGE" value="corrected" />
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/Homework 13/Task 1/index.js</url>
-          <line>19</line>
+          <url>file://$PROJECT_DIR$/../../hillel_homeworks-master/lesson_10/index.js</url>
+          <line>24</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/../../hillel_homeworks-master/lesson_10/index.js</url>
+          <line>25</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/../../hillel_homeworks-master/lesson_10/index.js</url>
+          <line>27</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/../../hillel_homeworks-master/lesson_10/index.js</url>
+          <line>28</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/../../hillel_homeworks-master/lesson_10/index.js</url>
+          <line>29</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/../../hillel_homeworks-master/lesson_10/index.js</url>
+          <line>30</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/../../hillel_homeworks-master/lesson_10/index.js</url>
+          <line>31</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/../../hillel_homeworks-master/lesson_10/index.js</url>
+          <line>32</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
