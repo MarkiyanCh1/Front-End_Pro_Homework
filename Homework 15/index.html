@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototypes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="prototypes__wrapper">
+        <div class="prototypes__forms-container">
+            <form id="userForm" class="prototypes__form" name="userForm">
+                <h3>Customer Data</h3>
+                <div class="prototypes__form-item">
+                    <label for="userNameInput" class="prototypes__form-label">Name*:</label>
+                    <input id="userNameInput" type="text" class="prototypes__form-input _userData" name="userName">
+                </div>
+                <div class="prototypes__form-item">
+                    <label for="userSurnameInput" class="prototypes__form-label">Surname*:</label>
+                    <input id="userSurnameInput" type="text" class="prototypes__form-input _userData" name="userSurname">
+                </div>
+                <div class="prototypes__form-item">
+                    <label for="userCountrySelect" class="prototypes__form-label">County*:</label>
+                    <select id="userCountrySelect" class="prototypes__form-select" name="userCountry">
+                        <option>Ukraine</option>
+                        <option>Poland</option>
+                    </select>
+                </div>
+                <div class="prototypes__form-item">
+                    <label for="userPhoneInput" class="prototypes__form-label">Phone number*:</label>
+                    <input id="userPhoneInput" type="number" class="prototypes__form-input _userData" name="userPhone">
+                </div>
+                <button type="submit" class="prototypes__form-button" name="userButton">Submit</button>
+            </form>
+            <form id="carForm" class="prototypes__form" name="carForm">
+                <h3>Car search</h3>
+                <div class="prototypes__form-item">
+                    <label for="carLabelSelect" class="prototypes__form-label">Car Brand*:</label>
+                    <select id="carLabelSelect" class="prototypes__form-select" name="carLabel" disabled>
+                        <option>Ford</option>
+                        <option>Volkswagen</option>
+                        <option>Mercedes</option>
+                        <option>Toyota</option>
+                    </select>
+                </div>
+                <div class="prototypes__form-item">
+                    <label for="carYearSelect" class="prototypes__form-label">Year of car*:</label>
+                    <select id="carYearSelect" class="prototypes__form-select" name="carYear" disabled>
+                        <option>2022</option>
+                        <option>2021</option>
+                        <option>2020</option>
+                        <option>2019</option>
+                        <option>2018</option>
+                        <option>2017</option>
+                        <option>2016</option>
+                        <option>2015</option>
+                        <option>2014</option>
+                        <option>2013</option>
+                    </select>
+                </div>
+                <div class="prototypes__form-item">
+                    <label for="carPriceInput" class="prototypes__form-label">Price (in USD) $*:</label>
+                    <input id="carPriceInput" type="number" class="prototypes__form-input _carReq" name="carPrice" disabled>
+                </div>
+                <button type="submit" class="prototypes__form-button carButton" name="carButton" disabled>Buy</button>
+            </form>
+        </div>
+        <div class="prototypes__buy-list"></div>
+        <button class="prototypes__form-button _clearButton">Clear Local Storage</button>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
