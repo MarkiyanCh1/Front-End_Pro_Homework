@@ -1,0 +1,86 @@
+body {
+    background-color: blue;
+}
+p {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+span {
+    color: rgb(143, 3, 40);
+    font-size: 19px;
+    font-weight: bold;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 968px;
+    margin: 0 auto;
+    padding: 5px 15px;
+    color: yellow;
+    -webkit-text-stroke: 1px #000;
+}
+.post {
+    font-size: 18px;
+    font-weight: 500;
+}
+.content {
+    background-color: white;
+    padding: 10px;
+    border-radius: 40px;
+}
+._error {
+    color: red;
+}
+.input {
+    min-width: 226px;
+    min-height: 35px;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 0 20px;
+    border-radius: 10px;
+    border: 0 solid #fff;
+    outline: none;
+    color: rgb(104,105,142);
+    margin-bottom: 20px;
+}
+.button-id {
+    min-width: 250px;
+    min-height: 35px;
+    border: 0 solid #fff;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(182, 5, 5);
+    border-radius: 10px;
+    background-color: rgb(54, 246, 225);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.button-id:hover {
+    transform: scale(1.1);
+}
+.user-email {
+    color: rgb(104,105,142);
+    padding: 35px 0 15px;
+}
+.comments-title {
+    font-size: 24px;
+}
+.post-title {
+    font-size: 30px;
+    padding: 5px 0;
+}
+.main-title {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bolder;
+    text-shadow: 1px -1px 1px rgb(193, 197, 246),
+    2px -2px 1px rgb(169, 170, 222),
+    3px -3px 1px rgb(165, 167, 211),
+    4px -4px 1px rgb(144, 145, 192),
+    5px -5px 1px rgb(144, 145, 185),
+    6px -6px 1px rgb(131, 132, 187),
+    7px -7px 1px rgb(101, 96, 133),
+    8px -8px 1px rgb(78, 79, 110);
+}
