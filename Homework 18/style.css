@@ -1,0 +1,84 @@
+* {
+    font-family: Montserrat, serif;
+}
+.weather__container {
+    background: linear-gradient(to right, #679ed6, #1a04db);
+    display: flex;
+    justify-content: space-around;
+    max-width: 500px;
+    border-radius: 10px;
+    color: white;
+    margin: 0 auto;
+}
+.weather__left-column {
+    display: flex;
+    flex-direction: column;
+    width: 52%;
+    padding-left: 35px;
+}
+.weather__date {
+    margin-top: 10px;
+    font-size: 26px;
+    font-weight: 700;
+}
+.weather__time {
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    font-size: 41px;
+}
+.weather__right-column {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 48%;
+}
+.weather__description {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 20px;
+}
+.weather__temp {
+    position: relative;
+    text-align: center;
+    height: 0;
+    top: -31px;
+}
+.weather__icon {
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+}
+.weather__refresh-button {
+    background-color: rgba(0, 0, 0, 0);
+    border: rgba(0, 0, 0, 0);
+    padding: 0;
+    max-width: 50px;
+}
+.weather__feels {
+    margin: 0;
+
+}
+.button_block {
+    display: flex;
+}
+.button_text {
+    margin: 10px 10px 0 0;
+    font-weight: 600;
+}
+.weather__refresh-icon {
+    width: 50px;
+    height: 50px;
+}
+.weather__date2 {
+    font-size: 15px;
+    margin: 10px 10px 0 15px;
+}
+.weather__time2 {
+    font-size: 15px;
+    margin: 10px 10px 0 0;
+}
+._rotate {
+    transition: 2s;
+    transform: rotate(360deg);
+}
