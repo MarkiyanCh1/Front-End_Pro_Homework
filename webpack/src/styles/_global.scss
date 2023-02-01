@@ -1,0 +1,36 @@
+$primaryColor : darkcyan;
+$secondaryColor : green;
+$jqueryColor : red;
+
+html {
+  font-family: generalFont, serif;
+}
+
+h1 {
+  color: $primaryColor;
+}
+.custom-image {
+  max-width: 300px;
+  padding-bottom: 20px;
+}
+
+#container {
+  background: url(../images/1.png);
+  max-width: 1050px;
+  height: 690px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 60px;
+  &__subheader {
+    color: $secondaryColor;
+  }
+}
+.btn {
+  width: 330px;
+}
+.jquery-title {
+  color: $jqueryColor;
+  padding-bottom: 20px;
+
+}
