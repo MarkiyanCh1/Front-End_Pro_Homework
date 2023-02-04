@@ -1,0 +1,25 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 15px 0;
+    color: black;
+    background-color: rgb(94, 140, 135);
+    border-radius: 10px;
+
+}
+.link {
+    color: black;
+    font-size: 18px;
+    margin: 0 10px;
+
+}
+.text {
+    margin: 0 10px;
+}
+.rep_info {
+    margin: 0 10px;
+    text-align: start;
+}
