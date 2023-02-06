@@ -1,0 +1,50 @@
+.TodoList {
+    margin: 0 auto;
+    padding: 10px 25px;
+    max-width: 500px;
+    background-color: rgba(33, 165, 246, 0.45);
+    border-radius: 15px;
+
+    &__form {
+        margin-bottom: 20px;
+    }
+
+    &__inputField {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__form-input {
+        height: 30px;
+        padding: 0 20px;
+        border-radius: 7px;
+        width: 60%;
+        font-size: 16px;
+        border: 2px solid rgb(140, 148, 124);
+        background-color: rgb(94, 140, 95);
+        color: rgb(255, 252, 252);
+        outline: none;
+
+        &._error {
+            border: 2px solid #4e4f6e;
+        }
+    }
+
+    &__button {
+        background-color: rgb(240, 8, 35);
+        border: 1px solid rgba(8,118,240,255);
+        color: #FFF;
+        width: 160px;
+        border-radius: 5px;
+        margin: 0 10px 0 20px;
+        min-height: 38px;
+        padding: 0 15px;
+        cursor: pointer;
+        font-size: 19px;
+
+        &:hover {
+            background-color: rgb(246, 137, 47);
+        }
+    }
+}
