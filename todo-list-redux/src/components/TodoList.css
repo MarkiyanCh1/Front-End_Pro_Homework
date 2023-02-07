@@ -1,0 +1,10 @@
+.TodoList {
+    margin: 20px auto;
+    padding: 10px 25px;
+    max-width: 500px;
+    background-color: rgba(33, 165, 246, 0.45);
+    border-radius: 15px;
+}
+.ListGroup {
+    margin: 0;
+}

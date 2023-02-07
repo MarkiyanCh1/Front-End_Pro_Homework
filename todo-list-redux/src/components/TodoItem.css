@@ -1,0 +1,35 @@
+.ListItem {
+    border-radius: 10px;
+}
+.Done {
+    text-decoration: line-through!important;
+    background-color: rgb(166, 5, 42);
+}
+.InProgress {
+    background-color: rgb(27, 80, 36);
+}
+.Task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+    padding: 10px 10px;
+}
+
+.Task_checkbox {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    bottom: 2px;
+}
+.Task_name {
+    font-size: 20px;
+    margin-left: 15px;
+}
+.Task_button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    position: relative;
+    top: 4px;
+}
