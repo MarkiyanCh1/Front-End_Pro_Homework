@@ -11,17 +11,23 @@
 // Максимально использовать функции
 
 function User() {
-    this.age = +(prompt("What is your age?", "18+"));
+    this.age = askForAge()
 }
-
+const askForAge = () => {
+    let age
+    while (!age) {
+        age = +(prompt("What is your age?", "18+"));
+    }
+    return age
+}
 
 function Car(user) {
     if (user.age >= 18){
-        this.owner = emptyField("Your name:");
-        this.brand = emptyField("Brand name:");
-        this.year = emptyField("Car year:");
-        this.type = emptyField("Type of car:");
-        this.power = emptyField("Engine power");
+        this.owner = recordInfo("Your name:");
+        this.brand = recordInfo("Brand name:");
+        this.year = recordInfo("Car year:");
+        this.type = recordInfo("Type of car:");
+        this.power = recordInfo("Engine power");
     }
     else if (user.age < 18) {
         alert("You are not allowed to drive a car")
@@ -43,7 +49,7 @@ function showData(userName){
 }
 
 
-function emptyField(msg){
+function recordInfo(msg){
     let text;
     do {
         text = prompt(msg);
