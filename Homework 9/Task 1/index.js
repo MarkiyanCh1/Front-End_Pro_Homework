@@ -1,51 +1,49 @@
-//1.  Создать слайдер
-// Он может показывать минимум 10 картинок.
-// Слайдер имеет две кнопки: Previous / Next.
-// При нажатии на которые он показывает предыдущую / следующую картинку.
-// Слайдер имеет нормальный вид и не меняет размер в зависимости от картинки (если только это не анимировано красиво).
-// НА крайних позициях своей навигации (первая/последняя картинка) слайдер может дизеблить кнопки соответственно (Previous/Next)
-// ИЛИ
-// может переходить на другой конец ряда картинок (с первой на последнюю и наоборот) (типа слайдер бесконечный).
-// Для работы с картинками в слайдере использовать
-// document.createElement
-// ИЛИ
-// работу с атрибутами тега <img/>
-// Задание со *: * реализовать listener для next/prev через делегирование событий с помощью одного addEventListener
+'use strict';
+const images = [
+    './images/1.jpg',
+    './images/2.jpg',
+    './images/3.jpg',
+    './images/4.jpg',
+    './images/5.jpg',
+    './images/6.jpg',
+    './images/7.jpg',
+    './images/8.jpg',
+    './images/9.jpg',
+    './images/10.jpg',
+];
 
-"use strict";
+const buttonContainer = document.querySelector('.slider__button-container');
+let number = 0;
+buttonContainer
+    .closest('.slider__wrapper')
+    .querySelector('.slider__progress-text').innerHTML = `Фото ${number + 1} из ${
+    images.length
+}`;
 
-const prevButton = document.querySelector(".prev-image");
-const nextButton = document.querySelector(".next-image");
-const image = document.createElement('img');
-image.setAttribute('alt', 'nature');
-image.setAttribute('height', '350px');
-image.setAttribute('width', '550px');
-image.style.border = '5px solid yellow';
-image.onerror = function handleError() {
-    console.log('Image could not be loaded');
-};
-function slider(Img) {
-    let i = 1;
-    nextButton.addEventListener("click", function () {
-        if ((i += 1) === Img + 1) {
-            i = 1;
-        }
-        image.setAttribute('src', `./images/${i}.jpg`);
-        const parentElement = document.getElementById('content-img');
-        const replaceElement = document.getElementById('first_image');
-        parentElement.replaceChild(image, replaceElement)
-    });
+buttonContainer.addEventListener('click', function (event) {
+    if (event.target.classList.contains('slider__prev-button')) {
+        this.closest('.slider__wrapper')
+            .querySelector('.slider__image')
+            .setAttribute('src', images[--number]);
+    }
+    if (event.target.classList.contains('slider__next-button')) {
+        this.closest('.slider__wrapper')
+            .querySelector('.slider__image')
+            .setAttribute('src', images[++number]);
+    }
 
-    prevButton.addEventListener("click", function () {
-        if ((i -= 1) === 0) {
-            i = Img;
-        }
-        image.src = `./images/${i}.jpg`;
-        const parentElement = document.getElementById('content-img');
-        const replaceElement = document.getElementById('first_image');
-        parentElement.replaceChild(image, replaceElement)
-
-    });
-}
-
-slider(10);
+    let lockedButton = () => {
+        this.closest('.slider__wrapper').querySelector(
+            '.slider__prev-button'
+        ).disabled = number < 1;
+        this.closest('.slider__wrapper').querySelector(
+            '.slider__next-button'
+        ).disabled = number == images.length - 1;
+    };
+    lockedButton();
+    buttonContainer
+        .closest('.slider__wrapper')
+        .querySelector('.slider__progress-text').innerHTML = `Photo ${
+        number + 1
+    } of ${images.length}`;
+});
