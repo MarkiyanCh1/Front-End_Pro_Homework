@@ -1,6 +1,3 @@
-// 3 Реализовать функцию generateKey(length, characters),
-// которая возвращает набор случайных символов из набора characters длиной length
-
 function generateKey(length, characters){
     let key = "";
     for (let i=0; i<length; i++){

@@ -1,7 +1,3 @@
-// 1 Дан массив объектов.
-// Вывести массив телефонных номеров пользователей у которых баланс больше 2000 долларов.
-// Вывести сумму балансов всех пользователей.
-
 const userData = [
   {
     index: 0,
@@ -54,29 +50,14 @@ const userData = [
   },
 ];
 
+const arrayPhones = [];
+const richUsers = userData.filter(function(userItem) {
+  userItem.balance = parseFloat(userItem.balance.slice(1).replace(/,/g, ''));
+  if (userItem.balance > 2000) {
+    arrayPhones.push(userItem.phone);
+  }
+});
+console.log(arrayPhones);
 
-const Userbalance = userData.filter(function (dataItem){
-    dataItem.balance = dataItem.balance.replace(',','');
-    dataItem.balance = dataItem.balance.slice(1, dataItem.balance.length);
-    return dataItem.balance > 2000.00;
-})
-
-
-let balance2000 = [];
-
-
-for(let i = 0; i < Userbalance.length; i++){
-    balance2000.push(Userbalance[i].phone);
-}
-
-
-console.log(`Telephone Numbers of users whose balances more than 2000: ${balance2000.join(", ")} `);
-
-
-let sum = 0;
-for(let i = 0; i < userData.length; i++){
-   sum += parseFloat(userData[i].balance);
-}
-
-
-console.log(`Sum of all balances: $${sum}`);
+const result = userData.reduce((a, b) => a + b.balance, 0);
+console.log('Сумма балансов всех юзеров =' + ' ' + result);
