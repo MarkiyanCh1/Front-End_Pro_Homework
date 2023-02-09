@@ -1,126 +1,152 @@
-"use strict";
+'use strict';
 
-let text;
-let i = 0;
-const taskArray = [];
+const todoForm = document.forms.todo;
+const list = document.querySelector('.todo-list__list');
+const input = document.querySelector('.todo-list__input');
+const select = document.querySelector('.todo-list__option');
+let counter = 0;
+const itemsArray = [];
 
-const form = document.getElementById("form");
-
-form.addEventListener("submit", function (event) {
-    i += 1;
+todoForm.addEventListener('submit', function (event) {
     event.preventDefault();
-    const newTask = {
-        id: taskArray.length === 0 ? 0 : taskArray[taskArray.length - 1].id + 1,
-        name: form.elements[0].value,
+
+    // Исключение повтора вывода сообщение об ошибке при многократном клике по кнопке Add
+    if (todoForm.querySelector('.error-text')) {
+        todoForm.querySelector('.error-text').remove();
+    }
+
+    if (!input.value.trim()) {
+        errorMessage(input, 'Поле ввода не должно быть пустым');
+        return;
+    }
+
+    // 1. Генерируем заранее, для элемента, случайный id и остальные параметры
+    const newItem = {
+        id: itemsArray.length == 0 ? 0 : itemsArray[itemsArray.length - 1].id + 1,
+        name: input.value.trim(),
         isDone: false,
     };
 
-    taskArray.push(newTask);
+    // 2. Доавляем в массив созданный объект
+    itemsArray.push(newItem);
 
-    console.log(taskArray);
+    //3. Создаем блок нашей заметки
+    const taskItem = document.createElement('div');
+    taskItem.classList.add('todo-list__item');
+    taskItem.setAttribute('data-id', newItem.id); // значение data-id будет вновь сгенерированный id
+    list.append(taskItem);
 
-    const div = createNode("div", [
-        { name: "class", value: "wrapper" },
-        { name: "data-id", value: newTask.id },
-    ]);
-    document.body.appendChild(div);
+    const taskLabel = document.createElement('p');
+    taskLabel.classList.add('todo-list__label');
+    taskLabel.textContent = ++counter + '. ' + input.value.trim();
+    taskItem.append(taskLabel);
 
-    text = this.elements.task.value;
+    const taskCheckbox = document.createElement('input');
+    taskCheckbox.classList.add('todo-list__checkbox');
+    taskCheckbox.setAttribute('type', 'checkbox');
+    taskItem.append(taskCheckbox);
 
-    const area = createNode("p", [{ name: "class", value: "default" }]);
-    area.innerText = text;
-    div.appendChild(area);
-    const checkbox = createNode("input", [
-        { name: "type", value: "checkbox" },
-        { name: "name", value: "checkbox" },
-        { name: "class", value: "checkbox" },
-    ]);
-    div.appendChild(checkbox);
+    const closeIcon = document.createElement('div');
+    closeIcon.classList.add('todo-list__close-icon');
+    taskItem.append(closeIcon);
 
-    const removeButton = createNode("button", [
-        { name: "id", value: `btnRemoveTask${i}` },
-        { name: "class", value: "removeButton" },
-    ]);
-    removeButton.innerText = "Remove";
-    div.appendChild(removeButton);
+    input.value = '';
+});
 
-    const btnRemoveTask = document.getElementById(`btnRemoveTask${i}`);
-    btnRemoveTask.addEventListener("click", removeAll);
+list.addEventListener('click', function (event) {
+    function changeIsDone() {
+        // 1. получаем id из параметра "data-id" dom-елемента в нашу переменную
+        const itemId = event.target
+            .closest('.todo-list__item')
+            .getAttribute('data-id');
+        // 2. Находим в массиве item-ов объект с "data-id" соответстующего нашему клику
+        const neededTask = itemsArray.find((item) => item.id == itemId);
+        // 3. Обращаемся по клику на чекбокс конкретного item, к свойству его объекта "isDone" и меняем его на true
+        neededTask.isDone = event.target.checked;
+    }
 
-    checkbox.addEventListener("change", function () {
+    if (
+        event.target.checked &&
+        event.target.classList.contains('todo-list__checkbox')
+    ) {
+        event.target
+            .closest('.todo-list__item')
+            .querySelector('.todo-list__label')
+            .classList.add('_crossed');
 
-        const wrapper = this.closest(".wrapper");
-        const id = wrapper.getAttribute("data-id");
+        changeIsDone();
+        filterTasks();
+    } else if (
+        !event.target.checked &&
+        event.target.classList.contains('todo-list__checkbox')
+    ) {
+        event.target
+            .closest('.todo-list__item')
+            .querySelector('.todo-list__label')
+            .classList.remove('_crossed');
 
-        const task = taskArray.find((taskItem) => taskItem.id == id);
-        task.isDone = this.checked;
+        changeIsDone();
+        filterTasks();
+    }
 
-        if (task.isDone) {
-            area.setAttribute("class", "line-through ");
-            console.log("Checkbox is checked..");
-        } else {
-            area.setAttribute("class", "");
-            console.log("Checkbox is not checked..");
+    // Удаление по клику на крестик
+    if (event.target.classList.contains('todo-list__close-icon')) {
+        event.target.closest('.todo-list__item').remove();
+    }
+});
+
+function errorMessage(element, textErrorMessage) {
+    let message = document.createElement('p');
+    message.classList.add('error-text');
+    message.textContent = textErrorMessage;
+    element.classList.add('_error');
+    element.closest('.todo-list__input-part').after(message);
+}
+
+// Очистка полей от ошибок если пользователь начинает вводить данные
+todoForm.querySelectorAll('.todo-list__input').forEach(function (item) {
+    item.addEventListener('input', function () {
+        if (item.classList.contains('_error')) {
+            this.classList.remove('_error');
+            this.closest('.todo-form').querySelector('.error-text').remove();
         }
     });
-
-    this.elements.task.value = "";
-
-    function removeAll() {
-        area.remove();
-        removeButton.remove();
-        checkbox.remove();
-        div.remove();
-    }
 });
 
-function createNode(tagName, attributes) {
-    const element = document.createElement(tagName);
-    attributes.forEach(({ name, value }) => {
-        element.setAttribute(name, value);
+// -------------------------- Part 2 -----------------------------------
+
+select.addEventListener('change', filterTasks);
+
+function filterTasks() {
+    const domArray = document.querySelectorAll('.todo-list__item');
+    domArray.forEach(function (domItem) {
+        domItem.classList.remove('_hidden');
     });
-    return element;
-}
-const select = document.getElementById("select");
-select.addEventListener("change", function () {
-    switch (this.value) {
-        case "done":
-            console.log(this.value);
-            for (let i = 0; i < taskArray.length; i++) {
-                if (taskArray[i].isDone != false) {
-                    const element = document.querySelector(`[data-id="${i}"]`);
-
-                    element.setAttribute("class", "wrapper");
-                } else {
-                    const element = document.querySelector(`[data-id="${i}"]`);
-
-                    element.setAttribute("class", "none");
+    if (select.selectedIndex == 1) {
+        const processArray = itemsArray.filter(function (item) {
+            return item.isDone == true;
+        });
+        // Да знаю я, знаю, что for не является оптимальным. По-другому 2 массива разной длины я сравнить не могу.
+        // По идее этот перебор тоже можно сделать в виде функции, но мне кажется, будет выглядеть еще сложнее, чем без нее.
+        for (let i = 0; i < processArray.length; i++) {
+            for (let j = 0; j < domArray.length; j++) {
+                if (processArray[i].id == domArray[j].getAttribute('data-id')) {
+                    domArray[j].classList.add('_hidden');
+                    break;
                 }
             }
-            break;
-        case "inProgress":
-            console.log(this.value);
-            for (let i = 0; i < taskArray.length; i++) {
-                if (taskArray[i].isDone == false) {
-                    const element = document.querySelector(`[data-id="${i}"]`);
-
-                    element.setAttribute("class", "wrapper");
-                } else {
-                    const element = document.querySelector(`[data-id="${i}"]`);
-
-                    element.setAttribute("class", "none");
+        }
+    } else if (select.selectedIndex == 2) {
+        const doneArray = itemsArray.filter(function (item) {
+            return item.isDone == false;
+        });
+        for (let i = 0; i < doneArray.length; i++) {
+            for (let j = 0; j < domArray.length; j++) {
+                if (doneArray[i].id == domArray[j].getAttribute('data-id')) {
+                    domArray[j].classList.add('_hidden');
+                    break;
                 }
             }
-            break;
-        case "all":
-            console.log(this.value);
-            for (let i = 0; i < taskArray.length; i++) {
-                const element = document.querySelector(`[data-id="${i}"]`);
-
-                element.setAttribute("class", "wrapper");
-            }
-            break;
-        default:
-            console.log("No such value")
+        }
     }
-});
+}
